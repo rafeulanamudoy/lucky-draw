@@ -15,7 +15,8 @@ const Shop = () => {
     const [luckyProduct, setLuckyProuduct] = useState({})
     //to select one product for user when he or she clicked select for me button.this functionality handle lotteryHandler method. in 49 number line
 
-    const [display, setDisplay] = useState("none")
+    const [display, setDisplay] = useState("none");
+    const [text, setText] = useState("block")
 
     const handleCart = (product) => {
         console.log(selectedProduct.length, product)
@@ -44,9 +45,13 @@ const Shop = () => {
     //   if  user click to the select Again button than the product will be gone from the select your mobile section UI.
     const emptyCart = () => {
 
+
         setSelectedProduct([])
         setToggole(false);
-        setDisplay("none")
+        setDisplay("none");
+        setText("none")
+
+
 
 
     }
@@ -67,6 +72,7 @@ const Shop = () => {
 
 
         setToggole(true)
+        setText("block")
 
         const selectedItem = selectedProduct[Math.round(Math.random() * 5 - 1)];
         if (selectedItem === undefined) {
@@ -119,6 +125,7 @@ const Shop = () => {
                             product={product}
                             key={product.id}
                             handleEvent={handleCart}
+                            toggole={toggole}
 
                         >
 
@@ -136,6 +143,7 @@ const Shop = () => {
                 luckyProduct={luckyProduct}
                 toggole={toggole}
                 display={display}
+                text={text}
 
 
             ></Order>

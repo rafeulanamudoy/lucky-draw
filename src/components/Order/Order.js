@@ -1,4 +1,5 @@
 
+import { useEffect } from 'react';
 import CartShow from '../CartShow/CartShow';
 import "./Order.css"
 const Order = (props) => {
@@ -6,11 +7,15 @@ const Order = (props) => {
     const productArray = props?.selectedProduct;
     const { name, id } = props.luckyProduct;
     const toggoleButton = props.toggole;
-    const displayProperty = props.display
-    console.log(toggoleButton, displayProperty)
+    const displayProperty = props.display;
+    const textPropery = props.text
+
+    console.log(toggoleButton, displayProperty);
+
     // console.log(name, id)
 
     // const { name, price, image } = props.selectedProduct
+
 
 
 
@@ -50,9 +55,9 @@ const Order = (props) => {
                         {
 
                             toggoleButton ? <button onClick={() => props.lotteryHandler("selected-btn")} id="selected-btn"
-                                disabled={true}
+                                disabled={toggoleButton}
                                 className='lottery-btn'>Select For me</button> : <button onClick={() => props.lotteryHandler("selected-btn")} id="selected-btn"
-                                    disabled={false}
+                                    disabled={toggoleButton}
                                     className='lottery-btn'>Select For me</button>
                         }
 
@@ -67,9 +72,12 @@ const Order = (props) => {
             {
 
                 id ?
-                    <div style={{ display: displayProperty }} className='winner-text'>Congratulation you win {name}</div>
+                    <div style={{ display: textPropery }} className='winner-text' >Congratulation you win {name}</div>
+
                     :
-                    <div style={{ display: displayProperty }} className='loser-text'>{name}</div>
+
+                    <div style={{ display: textPropery }} className='loser-text'>{name}</div>
+
             }
 
         </div>
