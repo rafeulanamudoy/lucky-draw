@@ -56,9 +56,9 @@ const Order = (props) => {
 
                             toggoleButton ? <button onClick={() => props.lotteryHandler("selected-btn")} id="selected-btn"
                                 disabled={toggoleButton}
-                                className='lottery-btn'>Select For me</button> : <button onClick={() => props.lotteryHandler("selected-btn")} id="selected-btn"
+                                className='lottery-btn'>Select For Me</button> : <button onClick={() => props.lotteryHandler("selected-btn")} id="selected-btn"
                                     disabled={toggoleButton}
-                                    className='lottery-btn'>Select For me</button>
+                                    className='lottery-btn'>Select For Me</button>
                         }
 
 
