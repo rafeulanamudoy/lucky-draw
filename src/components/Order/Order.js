@@ -5,7 +5,10 @@ const Order = (props) => {
     // console.log(props)
     const productArray = props?.selectedProduct;
     const { name, id } = props.luckyProduct;
-    console.log(name, id)
+    const toggoleButton = props.toggole;
+    const displayProperty = props.display
+    console.log(toggoleButton, displayProperty)
+    // console.log(name, id)
 
     // const { name, price, image } = props.selectedProduct
 
@@ -37,29 +40,36 @@ const Order = (props) => {
 
                     )
                 }
-                <div className='btn-container'>
-                    {
 
-                        name ? <button onClick={() => props.lotteryHandler("selected-btn")} id="selected-btn"
-                            disabled={true}
-                            className='lottery-btn'>Select For me</button> : <button onClick={() => props.lotteryHandler("selected-btn")} id="selected-btn"
-                                disabled={false}
-                                className='lottery-btn'>Select For me</button>
-                    }
+
+                <div id='btn-main-container' style={{ display: displayProperty }}>
 
 
 
-                    <button onClick={props.handleClearCart} id="select-again" className='delte-btn'>Select Again</button>
+                    <div id='btn-container' >
+                        {
+
+                            toggoleButton ? <button onClick={() => props.lotteryHandler("selected-btn")} id="selected-btn"
+                                disabled={true}
+                                className='lottery-btn'>Select For me</button> : <button onClick={() => props.lotteryHandler("selected-btn")} id="selected-btn"
+                                    disabled={false}
+                                    className='lottery-btn'>Select For me</button>
+                        }
+
+
+
+                        <button onClick={() => props.handleClearCart()} id="select-again" className='delte-btn'>Select Again</button>
+                    </div>
                 </div>
-
             </div>
+
 
             {
 
                 id ?
-                    <div className='winner-text'>Congratulation you win {name}</div>
+                    <div style={{ display: displayProperty }} className='winner-text'>Congratulation you win {name}</div>
                     :
-                    <div className='loser-text'>{name}</div>
+                    <div style={{ display: displayProperty }} className='loser-text'>{name}</div>
             }
 
         </div>

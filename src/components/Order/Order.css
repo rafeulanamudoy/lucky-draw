@@ -7,14 +7,18 @@
     flex-direction: column;
 }
 
-.btn-container {
+#btn-container {
 
     display: grid;
     grid-template-columns: auto auto;
     gap: 15px;
     margin-top: 15px;
 
+
+
 }
+
+
 
 .lottery-btn {
 
@@ -24,6 +28,7 @@
     color: white;
     line-height: 25px;
     cursor: pointer;
+    display: block;
 
 }
 
@@ -35,6 +40,7 @@
     color: white;
     line-height: 25px;
     cursor: pointer;
+    display: block;
 
 }
 
