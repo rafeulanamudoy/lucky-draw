@@ -1,0 +1,54 @@
+.order-container {
+
+
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-container {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    margin-top: 15px;
+
+}
+
+.lottery-btn {
+
+
+    border: none;
+    background-color: rgb(42, 1, 80);
+    color: white;
+    line-height: 25px;
+    cursor: pointer;
+
+}
+
+.delte-btn {
+
+
+    border: none;
+    background-color: rgb(77, 131, 55);
+    color: white;
+    line-height: 25px;
+    cursor: pointer;
+
+}
+
+.winner-text {
+
+    color: green;
+    font-weight: 700;
+    font-size: larger;
+    margin-top: 30px;
+}
+
+.loser-text {
+    color: red;
+    font-weight: 700;
+    font-size: larger;
+    margin-top: 30px;
+}

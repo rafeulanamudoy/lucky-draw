@@ -1,0 +1,68 @@
+[
+    {
+        "id": "1",
+        "name": "Google Pixel 3a",
+        "price": 38000,
+        "image": "https://i.ibb.co/nRQqCrh/google-pixel-3a-min.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Google Pixel 6a",
+        "price": 52000,
+        "image": "https://i.ibb.co/FnFhcJj/google-pixel-6a-min.jpg"
+    },
+    {
+        "id": "3",
+        "name": "Apple iPhone  12",
+        "price": 71800,
+        "image": "https://i.ibb.co/5x109cb/iphone-12-min.jpg"
+    },
+    {
+        "id": "4",
+        "name": "Apple iPhone  13 Pro Max",
+        "price": 176999,
+        "image": "https://i.ibb.co/xMTfw26/iphone-13-pro-max1-min.jpg"
+    },
+    {
+        "id": "5",
+        "name": "Apple iPhone SE",
+        "price": 520000,
+        "image": "https://i.ibb.co/Wprtwy2/i-Phone-SE-2022-min.jpg"
+    },
+    {
+        "id": "6",
+        "name": "OnePlus 10 Pro",
+        "price": 84990,
+        "image": "https://i.ibb.co/0nwRR7N/one-Plus-10-pro-min.jpg"
+    },
+    {
+        "id": "7",
+        "name": "Samsung Galaxy S21 Ultra ",
+        "price": 139999,
+        "image": "https://i.ibb.co/PMjm4fy/s21-ultra-min.jpg"
+    },
+    {
+        "id": "8",
+        "name": "Samsung Galaxy Z Flip",
+        "price": 149999,
+        "image": "https://i.ibb.co/x6RPnNp/samsung-gen-z-min.jpg"
+    },
+    {
+        "id": "9",
+        "name": "Samsung Galaxy Note20 Ultra",
+        "price": 134999,
+        "image": "https://i.ibb.co/WH4pdZf/samsung-note-s20-ultra-min.jpg"
+    },
+    {
+        "id": "10",
+        "name": "Samsung Galaxy Tab S7",
+        "price": 58000,
+        "image": "https://i.ibb.co/c2r7NCm/samsung-tab-s7-min.jpg"
+    },
+    {
+        "id": "11",
+        "name": "Oppo Reno5",
+        "price": 32990,
+        "image": "https://i.ibb.co/Cm5HG2s/oppo-reno-5-min.jpg"
+    }
+]

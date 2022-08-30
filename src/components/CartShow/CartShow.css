@@ -1,0 +1,29 @@
+.cart-info {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    align-items: center;
+
+    gap: 25px;
+    font-size: larger;
+    font-weight: 700;
+
+
+}
+
+.cart-info img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+
+}
+
+.cart-btn {
+
+    border: none;
+
+    font-size: larger;
+    cursor: pointer;
+
+}
