@@ -1,6 +1,6 @@
 # Lucky Draw
 
-This project Link[Create React App](https://lucky-semolina-ea6e52.netlify.app).
+This project Link[Lucky Draw](https://lucky-semolina-ea6e52.netlify.app).
 
 * here user can Choose less than five products
 * user cannot choose duplicate product
